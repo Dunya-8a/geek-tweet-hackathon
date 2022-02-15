@@ -1,0 +1,35 @@
+// @use "variables" as *;
+// @use "mixins" as *;
+
+@font-face {
+    font-family: "SourceCodePro";
+    src: url(/assets/fonts/SourceCodePro-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SourceCodePro";
+    color: white;
+    text-decoration: none;
+    background-color: rgb(1, 2, 18);
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}

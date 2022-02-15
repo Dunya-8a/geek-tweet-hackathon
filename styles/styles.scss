@@ -1,0 +1,99 @@
+// @use "partials/variables";
+@use "partials/global";
+// @use "partials/breakpoints";
+// @use "partials/global";
+@use "partials/hero";
+// @use "partials/main";
+@use "partials/header";
+// @use "partials/footer";
+
+// @use "partials/mixins";
+
+
+
+.tweets {
+
+    padding: 5% 10%;
+
+    &__full-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__selector {
+        font-size: 1.5rem;
+        margin: 16px 0;
+        // padding: 16px 0;
+    }
+    
+    &__selector-info {
+        font-size: 1rem;
+        color: #b5b5b5;
+        margin: 16px 0;
+    }
+
+    // for the js part
+
+    &__box {
+        margin: 16px 0;
+        padding: 12px 0;
+        background-color: white;
+        border: solid 4px blue;
+
+        &:hover {
+            .tweets__original {
+                display: block;
+            }
+
+            .tweets__translated {
+                display: none;
+            }
+        }
+    }
+
+    &__translated {
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+    }
+
+    &__original {
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        display: none;
+    }
+}
+
+#tweetsform {
+    padding: 16px 0;
+}
+
+#tweetmaster {
+    // background-color: white;
+    height: 32px;
+    width: 23%;
+    margin: 32px 0;
+}
+
+#tweetlanguage {
+    // background-color: white;
+    // color: black;
+    height: 15%;
+}
+
+#tweets__button {
+    // background-color: white;
+    // color: black;
+    margin: 32px 0;
+    width: 100px;
+    padding: 8px 0;
+    // height: 32px;
+}
+
+

@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        width: 11%;
+        height: 11%;
+        vertical-align: top;
+
+        a {
+            align-items: flex-start;
+            height: 8%;
+            vertical-align: top;
+        }
+    }
+    
+    &__nav {
+        height: 6%;
+        flex-shrink: 0;
+        width: 30%;
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            
+        }
+
+        &-link {
+            padding: 16px 10%;
+
+            &--active {
+                border-bottom: 2px solid;
+            }
+        }
+    }    
+}
+

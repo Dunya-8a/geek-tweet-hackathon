@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/geektweet.js" defer></script>
+    <title>Geek Tweet</title>
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.twitter.com/" target="_blank"><img src="/assets/images/twitter-icon-bitrebels.jpeg" alt="Boba Fett flying cruiser in the shape of the Twitter icon" class="header__img"></a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-link header__nav-link--active">Home</li>
+                <li class="header__nav-link">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <hero class="hero">
+        <div>
+            <img class="hero__bg" src="/assets/images/pixel-earth.png" alt="Pixel image of earth from the side">
+            <h1 class="hero__title hero__title--1">Get your best tweets</h1>
+            <h1 class="hero__title hero__title--2">in your favorite geek speak</h1>
+        </div>
+    </hero>
+    <main class="tweets">
+        <div class="tweets__full-container">
+            <form action="" id="tweets__form">
+                <!-- <div id="tweets__master"> -->
+                    <label for="tweetmaster" class="tweets__selector">Tweet Master</label><br>
+                    <label class="tweets__selector-info">enter twitter handle @</label><br>
+                    <input type="text" name="tweetmaster" id="tweetmaster" placeholder="michelleobama">
+                    <br>
+                <!-- </div> -->
+                <!-- <div id="tweets__language"> -->
+                    <label for="tweetlanguage" class="tweets__selector">Language</label><br>
+                    <select name="tweetlanguage" id="tweetlanguage">
+                        <option value="klingon">Klingon</option>
+                        <option value="vulcan">Vulcan</option>
+                        <option value="yoda">Yoda</option>
+                        <option value="mandalorian">Mandalorian</option>
+                        <option value="valyrian">Valyrian</option>
+                        <option value="dothraki">Dothraki</option>
+                        <option value="minion">Minion</option>
+                    </select>
+                    <br>
+                <!-- </div> -->
+                <button type="submit" id="tweets__button">Let's go!</button>
+            </form>
+            <div class="tweets__container">
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

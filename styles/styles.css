@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url(/assets/fonts/SourceCodePro-VariableFont_wght.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SourceCodePro";
+  color: white;
+  text-decoration: none;
+  background-color: #010212;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+
+.hero__bg {
+  position: relative;
+  width: 100%;
+}
+.hero__title {
+  background-color: transparent;
+  width: 800px;
+  font-size: 3rem;
+  position: absolute;
+  left: 10%;
+}
+.hero__title--1 {
+  top: 180px;
+}
+.hero__title--2 {
+  top: 402px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  width: 11%;
+  height: 11%;
+  vertical-align: top;
+}
+.header__img a {
+  align-items: flex-start;
+  height: 8%;
+  vertical-align: top;
+}
+.header__nav {
+  height: 6%;
+  flex-shrink: 0;
+  width: 30%;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.header__nav-link {
+  padding: 16px 10%;
+}
+.header__nav-link--active {
+  border-bottom: 2px solid;
+}
+
+.tweets {
+  padding: 5% 10%;
+}
+.tweets__full-container {
+  display: flex;
+  flex-direction: column;
+}
+.tweets__container {
+  display: flex;
+  flex-direction: column;
+}
+.tweets__selector {
+  font-size: 1.5rem;
+  margin: 16px 0;
+}
+.tweets__selector-info {
+  font-size: 1rem;
+  color: #b5b5b5;
+  margin: 16px 0;
+}
+.tweets__box {
+  margin: 16px 0;
+  padding: 12px 0;
+  background-color: white;
+  border: solid 4px blue;
+}
+.tweets__box:hover .tweets__original {
+  display: block;
+}
+.tweets__box:hover .tweets__translated {
+  display: none;
+}
+.tweets__translated {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+.tweets__original {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  display: none;
+}
+
+#tweetsform {
+  padding: 16px 0;
+}
+
+#tweetmaster {
+  height: 32px;
+  width: 23%;
+  margin: 32px 0;
+}
+
+#tweetlanguage {
+  height: 15%;
+}
+
+#tweets__button {
+  margin: 32px 0;
+  width: 100px;
+  padding: 8px 0;
+}
